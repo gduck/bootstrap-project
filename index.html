@@ -59,30 +59,70 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2 sidebar hidden-xs hidden-sm hidden-md">
-        <div class="quicklink-box">
-          <!-- Standard button -->
-          <button type="button" class="btn btn-primary btn-lg btn-block primary-button CAPS-style">All Channels</button>
+        <div class="col-lg-12 btn-group sidebar-box">
+
+          <!-- Dropdown button -->
+          <button type="button" class="col-lg-12 btn btn-default dropdown-toggle primary-button CAPS-style" data-toggle="dropdown" aria-expanded="false">All Channels<span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a>
+            </li>
+            <li><a href="#">Another action</a>
+            </li>
+            <li><a href="#">Something else here</a>
+            </li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a>
+            </li>
+          </ul>
+
           <div>
-          <!-- Standard button -->
-          <button type="button" class="btn btn-default half-width-btn CAPS-style">Latest</button>
-          <!-- Standard button -->
-          <button type="button" class="btn btn-default half-width-btn CAPS-style">Popular</button>
-          </div> <!-- end split buttons-->
+            <!-- Standard buttons -->
+            <button type="button" class="col-lg-6 btn btn-default half-width-btn CAPS-style">Latest</button>
+            <button type="button" class="col-lg-6 btn btn-default half-width-btn CAPS-style">Popular</button>
+          </div> <!-- end half-width-btn buttons-->
+        </div> <!-- end sidebar-box -->
+
+        <div class="sidebar-box col-lg-12">
+
+          <div class="article col-lg-12">
+          <!-- <p>Here is some text</p> -->
+            <img class="col-lg-3 sidebar-image" src="images/sidebar/kits-and-themese-feat-60x50.jpg">
+            <h5 class="col-lg-9 sidebar-article-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+          </div> <!-- end article -->
+
+          <div class="article col-lg-12">
+          <!-- <p>Here is some text</p> -->
+            <img class="col-lg-3 sidebar-image" src="images/sidebar/Square-Reader-60x50.jpg">
+            <h5 class="col-lg-9 sidebar-article-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+            <span class="sidebar-timestamp">
+          </div> <!-- end article -->
+
+          <div class="article col-lg-12">
+          <!-- <p>Here is some text</p> -->
+            <img class="col-lg-3 sidebar-image" src="images/sidebar/well-dressed-man-in-coat-60x50.jpg">
+            <h5 class="col-lg-9 sidebar-article-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+          </div> <!-- end article -->
+
+          <div class="article col-lg-12">
+          <!-- <p>Here is some text</p> -->
+            <img class="col-lg-3 sidebar-image" src="images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png">
+            <h5 class="col-lg-9 sidebar-article-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+          </div> <!-- end article -->
+
+          <div class="article col-lg-12">
+          <!-- <p>Here is some text</p> -->
+            <img class="col-lg-3 sidebar-image" src="images/sidebar/Full-Page-Beauty-Bundle-Screenshot-3-1-60x50.png">
+            <h5 class="col-lg-9 sidebar-article-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+          </div> <!-- end article -->
+
+
+
+
         </div>
-        <!-- end quicklink-box -->
 
-        <ul class="nav nav-sidebar ">
-          <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a>
-          </li>
-          <li><a href="#">Reports</a>
-          </li>
-          <li><a href="#">Analytics</a>
-          </li>
-          <li><a href="#">Export</a>
-          </li>
-        </ul>
-
-
+<!-- 
+        <div>
         <ul class="nav nav-sidebar">
           <li><a href="">Nav item</a>
           </li>
@@ -95,14 +135,15 @@
           <li><a href="">More navigation</a>
           </li>
         </ul>
+        </div> -->
 
       </div>
       <div class="col-xs-12 col-lg-offset-2 main">
-        <h1>News Content</h1>
+        <!-- <h1>News Content</h1> -->
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-12 col-lg-10">
-              <div class="all-content-container">
+            <div class="col-xs-12 col-lg-10 all-content-container">
+              <!-- <div class="all-content-container col"> -->
                 <div class="main-content-container col-lg-8">
                   <div class="article">
                     <figure>
@@ -135,7 +176,7 @@
 
                 </div>
                 <!-- end class main-content-container -->
-                <div class="right-side-content-container col-lg-4 visible-md visible-lg">
+                <div class="col-lg-4 visible-md visible-lg right-side-content-container ">
                   <div class="article">
                     <figure>
                       <img width='100%' src="images/main/well-dressed-man-in-coat-520x245.jpg">
@@ -158,7 +199,7 @@
                   <!-- end class article -->
                 </div>
                 <!-- end right-side-content-container -->
-              </div>
+              <!-- </div> -->
             </div>
           </div>
         </div>

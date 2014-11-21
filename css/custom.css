@@ -1,15 +1,24 @@
 /* You can include your custom styling here */
+#navbar{
+  border-bottom: 1px solid gray;
+}
+
+
+
+.main{
+  background-color: #e7e7e7;
+}
+
 .all-content-container{
-    border: 1px solid #eeeeee;
+    border: 1px solid gray;
     /*background color not working, also border being cut off*/
-    background-color: #fff;
-    width:100%;
+    background-color: white;
 }
 
 
 .main-content-container{
   padding: 15px;
-;
+  background-color: white;
 }
 
 .caption-class{
@@ -34,23 +43,47 @@
 
 .right-side-content-container {
   padding:15px;
+  background-color: white;
 }
 
 .article-text {
   color: gray;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
 }
 
 .article {
   padding-bottom: 30px;
+  margin:0;
+  vertical-align: center;
 }
 
 .small-article-heading {
   padding-bottom: 20px;
 }
 
+.sidebar {
+  display: block;
+  padding: 0;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.sidebar-box{
+  margin:0;
+  padding:0;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+}
+
+.caret {
+  float: right;
+  vertical-align: center;
+}
+
 .half-width-btn{
-  width: 49%;
+  /*width: 49%;*/
+  /*col-lg-6;*/
   margin: 0;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -58,4 +91,28 @@
 
 .primary-button {
   margin-top: 5px;
+  width:100%;
+  background-color: red;
+  color: white;
+}
+
+.sidebar-articles-box{
+  margin:0;
+  border: 1px solid gray;
+  vertical-align: center;
+}
+
+.sidebar-image{
+  margin:0;
+  vertical-align: center;
+  padding: 0;
+}
+
+.sidebar-article-heading {
+  margin:0;
+  color: gray;
+  /*font-size: 75%;*/
+  padding: 0;
+  padding-left: 10px;
+  vertical-align: center;
 }
