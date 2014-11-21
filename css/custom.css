@@ -52,9 +52,13 @@
 }
 
 .article {
-  padding-bottom: 30px;
+  padding:0;
+  padding-bottom: 25px;
+  padding-top: 25px;
   margin:0;
   vertical-align: center;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 
 .small-article-heading {
@@ -71,8 +75,9 @@
 .sidebar-box{
   margin:0;
   padding:0;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: white;
-  border-bottom: 1px solid gray;
   margin-bottom: 30px;
 }
 
@@ -98,11 +103,13 @@
 
 .sidebar-articles-box{
   margin:0;
+
   border: 1px solid gray;
   vertical-align: center;
 }
 
 .sidebar-image{
+  box-shadow: 0px 0px 10px #888;
   margin:0;
   vertical-align: center;
   padding: 0;
@@ -111,8 +118,16 @@
 .sidebar-article-heading {
   margin:0;
   color: gray;
-  /*font-size: 75%;*/
+  /*font-stretch: condensed;*/
+  font-family: Helvetica;
+  font-stretch: ;
   padding: 0;
   padding-left: 10px;
   vertical-align: center;
+}
+.sidebar-timestamp {
+  padding-left: 10px;
+  color: gray;
+  font-size: 80%;
+  font-style: italic;
 }
