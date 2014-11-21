@@ -57,6 +57,8 @@
   padding-top: 25px;
   margin:0;
   vertical-align: center;
+}
+.small-article {
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
 }
@@ -110,23 +112,30 @@
 
 .sidebar-image{
   box-shadow: 0px 0px 10px #888;
+  border-radius: 10px;
   margin:0;
-  vertical-align: center;
-  padding: 0;
+  vertical-align: middle;
+  padding:0;
+  margin-top: 5px;
 }
 
 .sidebar-article-heading {
   margin:0;
   color: gray;
   /*font-stretch: condensed;*/
-  font-family: Helvetica;
+ 
   font-stretch: ;
   padding: 0;
   padding-left: 10px;
-  vertical-align: center;
+  vertical-align: top;
 }
+.sidebar-article-heading h5{
+   font-family: 'Source Sans Pro',sans-serif;
+}
+
+
 .sidebar-timestamp {
-  padding-left: 10px;
+  /*padding-left: 10px;*/
   color: gray;
   font-size: 80%;
   font-style: italic;
