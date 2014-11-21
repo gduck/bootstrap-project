@@ -12,6 +12,7 @@
 
 .main{
   background-color: #e7e7e7;
+  /*margin-left:500px;*/
 }
 
 .all-content-container{
@@ -74,6 +75,8 @@
 }
 
 .sidebar {
+  /*width is an experiment*/
+  /*width:500px;*/
   display: block;
   padding: 0;
   background-color: white;
