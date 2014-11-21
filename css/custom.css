@@ -16,6 +16,7 @@
   text-align: left;
   padding-top: 15px;
   padding-bottom: 0px;
+  color: gray;
 }
 
 .author-style{
@@ -36,8 +37,13 @@
 
 .article-text {
   color: gray;
+  padding-bottom: 20px;
 }
 
 .article {
+  padding-bottom: 30px;
+}
+
+.small-article-heading {
   padding-bottom: 20px;
 }
