@@ -21,8 +21,9 @@
 
 .author-style{
   color: red;
+}
+.CAPS-style{
   font-variant: small-caps;
-
 }
 
 .article-heading{
@@ -46,4 +47,15 @@
 
 .small-article-heading {
   padding-bottom: 20px;
+}
+
+.half-width-btn{
+  width: 49%;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.primary-button {
+  margin-top: 5px;
 }
