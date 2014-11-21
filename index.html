@@ -28,17 +28,33 @@
 <!-- NAVBAR -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
+
+    <!-- navbar-header is for what is always there, in both views -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <a class="navbar-brand" href="#">
           <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
         </a>
-      </div>
+      </div> <!-- end navbar-header -->
+      
+      <!-- this is what appears only when toggled when collapsed -->
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a class="CAPS-style" href="#">BLOG</a></li>
+          <li><a class="CAPS-style" href="#">CONFERENCE</a></li>
+          <li><a class="CAPS-style" href="#">DEALS</a></li>
+          <li><a class="CAPS-style" href="#">PRO</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><form class="navbar-form">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form></li>
+        </ul>
+      </div> <!-- end navbar-collapse collapse -->
+    </div> <!-- end container fluid -->
+  </nav>
+
+<!-- old code
+
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Dashboard</a>
@@ -54,8 +70,20 @@
           <input type="text" class="form-control" placeholder="Search...">
         </form>
       </div>
-    </div>
-  </nav>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
+        </a>
+
+        old code -->
+
+
 
 
   <div class="container-fluid">
@@ -186,7 +214,7 @@
           </div>
         </div>
       </div> <!-- end main -->
-      
+
     </div> <!-- end row -->
   </div> <!-- end container-fluid -->
 

@@ -1,9 +1,14 @@
 /* You can include your custom styling here */
-#navbar{
+.navbar{
   border-bottom: 1px solid gray;
 }
 
+.navbar-header {
+}
 
+.navbar-right {
+
+}
 
 .main{
   background-color: #e7e7e7;
@@ -33,6 +38,7 @@
 }
 .CAPS-style{
   font-variant: small-caps;
+  font-family: 'Source Sans Pro',sans-serif;
 }
 
 .article-heading{
@@ -80,7 +86,8 @@
   padding-left: 10px;
   padding-right: 10px;
   background-color: white;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top:20px;
 }
 
 .caret {
@@ -105,7 +112,6 @@
 
 .sidebar-articles-box{
   margin:0;
-
   border: 1px solid gray;
   vertical-align: center;
 }
@@ -122,8 +128,6 @@
 .sidebar-article-heading {
   margin:0;
   color: gray;
-  /*font-stretch: condensed;*/
- 
   font-stretch: ;
   padding: 0;
   padding-left: 10px;
@@ -135,7 +139,6 @@
 
 
 .sidebar-timestamp {
-  /*padding-left: 10px;*/
   color: gray;
   font-size: 80%;
   font-style: italic;
