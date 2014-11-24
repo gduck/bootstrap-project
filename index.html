@@ -12,11 +12,8 @@
 
   <title>The Next Web</title>
 
-  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link href="https://http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
 
   <script src="js/ie-emulation-modes-warning.js"></script>
   <style type="text/css"></style>
@@ -26,81 +23,104 @@
 
 <body>
 
-<!-- NAVBAR -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
 
-    <!-- navbar-header is for what is always there, in both views -->
+      <!-- navbar-header is for what is always there, in both views -->
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" id="Logo" href="#">
           <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
         </a>
-
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar">Here is something</span>
-       </button>
-
-
-      </div> <!-- end navbar-header -->
-      
-      <!-- this is what appears only when toggled when collapsed -->
-      <div id="navbar" class="navbar-collapse collapse">
-
-
-        <ul class="nav navbar-nav">
-          <li><a class="CAPS-style" href="#">BLOG</a></li>
-          <li><a class="CAPS-style" href="#">CONFERENCE</a></li>
-          <li><a class="CAPS-style" href="#">DEALS</a></li>
-          <li><a class="CAPS-style" href="#">PRO</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><form class="navbar-form">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form></li>
-        </ul>
-      </div> <!-- end navbar-collapse collapse -->
-    </div> <!-- end container fluid -->
-  </nav>
-
-<!-- old code
-
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Dashboard</a>
-          </li>
-          <li><a href="#">Settings</a>
-          </li>
-          <li><a href="#">Profile</a>
-          </li>
-          <li><a href="#">Help</a>
-          </li>
-        </ul>
-        <form class="navbar-form navbar-right">
-          <input type="text" class="form-control" placeholder="Search...">
-        </form>
       </div>
+      <!-- end navbar-header -->
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
-        </a>
+      <div id="blog-link" class="navbar-left-box hidden-xs">
+        <ul class="nav navbar-nav nav-blog-link navbar-section">
+          <li><a class="CAPS-style" href="#">BLOG</a>
+          </li>
+          <li><a class="CAPS-style" href="#">CONFERENCE</a>
+          </li>
+          <li><a class="CAPS-style" href="#">DEALS</a>
+          </li>
+          <li><a class="CAPS-style" href="#">PRO</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end left links section -->
 
-        old code -->
+      <div class="navbar-right navbar-section">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Search</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- end right navbar search box -->
 
+      <div class="navbar-right navbar-section hidden-xs">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- end Info section -->
+
+      <div class="navbar-right navbar-section hidden-xs">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- end Info section -->
+
+      <div class="navbar-right navbar-follow-section navbar-section ">
+        <!-- 3 buttons & a caret -->
+        <ul class="nav navbar-nav hidden-xs">
+
+
+            <li><button type="button" class="btn btn-default" aria-expanded="false">
+              Like</button></li>
+            <li><button type="button" class="btn btn-default" aria-expanded="false">
+              Follow</button></li>
+            <li><button type="button" class="btn btn-default" aria-expanded="false">
+              <span class="glyphicon glyphicon-signal"></span>
+            </button></li>
+
+
+          <div class="navbar-follow-caret">
+            <span class="caret"></span>
+            <ul class="dropdown-menu" role="menu">
+              <li>this is the menu</li>
+            </ul>
+          </div>
+
+        </ul>
+      </div> <!-- end navbar follow button section -->
+
+    </div>
+    <!-- end container fluid -->
+  </nav>
 
 
 
   <div class="container-fluid">
     <div class="row">
-<!-- LEFT SIDEBAR -->
+      <!-- LEFT SIDEBAR -->
       <div class="col-lg-3 sidebar hidden-xs hidden-sm hidden-md">
-      <!-- <div class="sidebar hidden-xs hidden-sm hidden-md"> -->
+        <!-- <div class="sidebar hidden-xs hidden-sm hidden-md"> -->
         <div class="col-lg-12 btn-group sidebar-box">
 
           <!-- Dropdown button -->
@@ -122,113 +142,125 @@
             <!-- Standard buttons -->
             <button type="button" class="col-lg-6 btn btn-default half-width-btn CAPS-style">Latest</button>
             <button type="button" class="col-lg-6 btn btn-default half-width-btn CAPS-style">Popular</button>
-          </div> <!-- end half-width-btn buttons-->
-        </div> <!-- end sidebar-box -->
+          </div>
+          <!-- end half-width-btn buttons-->
+        </div>
+        <!-- end sidebar-box -->
 
         <div class="sidebar-box col-lg-12">
 
           <div class="article small-article col-lg-12">
             <img class="col-lg-3 sidebar-image" src="images/sidebar/kits-and-themese-feat-60x50.jpg">
             <span class="col-lg-9 sidebar-article-heading"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<h5></span>
-          </div> <!-- end article -->
+          </div>
+          <!-- end article -->
 
           <div class="article small-article col-lg-12">
             <img class="col-lg-3 sidebar-image" src="images/sidebar/Square-Reader-60x50.jpg">
             <span class="col-lg-9 sidebar-article-heading"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
             <time class="sidebar-timestamp">10 minutes ago</time></span>
-          </div> <!-- end article -->
+          </div>
+          <!-- end article -->
 
           <div class="article small-article col-lg-12">
             <img class="col-lg-3 sidebar-image" src="images/sidebar/well-dressed-man-in-coat-60x50.jpg">
             <span class="col-lg-9 sidebar-article-heading"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
             <time class="sidebar-timestamp">10 minutes ago</time></span>
-          </div> <!-- end article -->
+          </div>
+          <!-- end article -->
 
           <div class="article small-article col-lg-12">
             <img class="col-lg-3 sidebar-image" src="images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png">
             <span class="col-lg-9 sidebar-article-heading"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
             <time class="sidebar-timestamp">10 minutes ago</time></span>
-          </div> <!-- end article -->
+          </div>
+          <!-- end article -->
 
           <div class="article small-article col-lg-12">
             <img class="col-lg-3 sidebar-image" src="images/sidebar/Full-Page-Beauty-Bundle-Screenshot-3-1-60x50.png">
             <span class="col-lg-9 sidebar-article-heading"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
             <time class="sidebar-timestamp">10 minutes ago</time></span>
-          </div> <!-- end article -->
-        </div> <!-- end sidebar box -->
-      </div> <!-- end sidebar -->
+          </div>
+          <!-- end article -->
+        </div>
+        <!-- end sidebar box -->
+      </div>
+      <!-- end sidebar -->
 
-<!-- MAIN -->
+      <!-- MAIN -->
       <div class="col-xs-12 col-lg-offset-3 col-lg-9 main">
-<!-- doing a fixed sidebar width experiment -->
-      <!-- <div class="col-xs-12 col-lg-9 main"> -->
+        <!-- doing a fixed sidebar width experiment -->
+        <!-- <div class="col-xs-12 col-lg-9 main"> -->
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 col-lg-12 all-content-container">
               <!-- all-content-container must take up the whole container -->
-                <div class="main-content-container col-lg-8">
-                  <div class="article">
-                    <figure>
-                      <img width='100%' src="images/main/Square-Reader-520x245.jpg">
-                      <figcaption class="caption-class">by <span class="author-style CAPS-style">BEN WOODS</span> -
-                        <time>20 Nov'14</time>
-                      </figcaption>
-                    </figure>
+              <div class="main-content-container col-lg-8">
+                <div class="article">
+                  <figure>
+                    <img width='100%' src="images/main/Square-Reader-520x245.jpg">
+                    <figcaption class="caption-class">by <span class="author-style CAPS-style">BEN WOODS</span> -
+                      <time>20 Nov'14</time>
+                    </figcaption>
+                  </figure>
 
-                    <h3 class="article-heading">Square offically launches its Register software platform worldwide</h3>
+                  <h3 class="article-heading">Square offically launches its Register software platform worldwide</h3>
 
-                    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
-                  <!-- end class article -->
-
-                  <div class="article">
-                    <!-- another article -->
-                    <figure>
-                      <img width='100%' src="images/main/well-dressed-man-in-coat-520x245.jpg">
-                      <figcaption class="caption-class">by <span class="author-style CAPS-style">BEN WOODS</span> -
-                        <time>20 Nov'14</time>
-                      </figcaption>
-                    </figure>
-
-                    <h3 class="article-heading">Square offically launches its Register software platform worldwide</h3>
-
-                    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
-                  <!-- end class article -->
-
+                  <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <!-- end class main-content-container -->
-                <div class="col-lg-4 visible-md visible-lg right-side-content-container ">
-                  <div class="article">
-                    <figure>
-                      <img width='100%' src="images/main/well-dressed-man-in-coat-520x245.jpg">
-                      <figcaption class="caption-class">
-                        <time>20 Nov'14</time> - <span class="author-style CAPS-style">Ben</span>
-                      </figcaption>
-                    </figure>
-                    <h4 class="small-article-heading">The weird science of first impressions</h4>
-                  </div>
-                  <!-- New article below -->
-                  <div class="article">
-                    <figure>
-                      <img width='100%' src="images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png">
-                      <figcaption class="caption-class">
-                        <time>20 Nov'14</time> - <span class="author-style">Ben</span>
-                      </figcaption>
-                    </figure>
-                    <h4 class="small-article-heading">Adidas now lets Americans print photos on their sneakers too</h4>
-                  </div>
-                  <!-- end class article -->
+                <!-- end class article -->
+
+                <div class="article">
+                  <!-- another article -->
+                  <figure>
+                    <img width='100%' src="images/main/well-dressed-man-in-coat-520x245.jpg">
+                    <figcaption class="caption-class">by <span class="author-style CAPS-style">BEN WOODS</span> -
+                      <time>20 Nov'14</time>
+                    </figcaption>
+                  </figure>
+
+                  <h3 class="article-heading">Square offically launches its Register software platform worldwide</h3>
+
+                  <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <!-- end right-side-content-container -->
+                <!-- end class article -->
+
+              </div>
+              <!-- end class main-content-container -->
+              <div class="col-lg-4 visible-md visible-lg right-side-content-container ">
+                <div class="article">
+                  <figure>
+                    <img width='100%' src="images/main/well-dressed-man-in-coat-520x245.jpg">
+                    <figcaption class="caption-class">
+                      <time>20 Nov'14</time> - <span class="author-style CAPS-style">Ben</span>
+                    </figcaption>
+                  </figure>
+                  <h4 class="small-article-heading">The weird science of first impressions</h4>
+                </div>
+                <!-- New article below -->
+                <div class="article">
+                  <figure>
+                    <img width='100%' src="images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png">
+                    <figcaption class="caption-class">
+                      <time>20 Nov'14</time> - <span class="author-style">Ben</span>
+                    </figcaption>
+                  </figure>
+                  <h4 class="small-article-heading">Adidas now lets Americans print photos on their sneakers too</h4>
+                </div>
+                <!-- end class article -->
+              </div>
+              <!-- end right-side-content-container -->
               <!-- </div> -->
             </div>
           </div>
         </div>
-      </div> <!-- end main -->
+      </div>
+      <!-- end main -->
 
-    </div> <!-- end row -->
-  </div> <!-- end container-fluid -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container-fluid -->
 
   <!-- Bootstrap core JavaScript
     ================================================== -->

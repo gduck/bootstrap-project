@@ -2,12 +2,13 @@
 .navbar{
   border-bottom: 1px solid gray;
 }
-
-.navbar-header {
+.navbar-section {
+  border-left: 1px solid #dddddd;
+  vertical-align: center;
 }
-
-.navbar-right {
-
+.navbar-follow-section {
+  text-align: center;
+  vertical-align: center;
 }
 
 .main{
@@ -17,7 +18,6 @@
 
 .all-content-container{
     border: 1px solid gray;
-    /*background color not working, also border being cut off*/
     background-color: white;
 }
 
@@ -41,6 +41,11 @@
   font-variant: small-caps;
   font-family: 'Source Sans Pro',sans-serif;
 }
+#blog-link {
+  color:red;
+}
+
+
 
 .article-heading{
   color: black;
